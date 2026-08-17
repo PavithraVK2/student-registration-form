@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+  <div class="registration-card">
+
+    <!-- LEFT SIDE -->
+    <section class="form-panel">
+      <div class="top-decoration"></div>
+
+      <header class="form-header">
+        <div class="sparkle">✧</div>
+        <div>
+          <h1>Student Registration Form</h1>
+          <div class="title-line"></div>
+          <p>Create your account and start your learning journey</p>
+        </div>
+      </header>
+
+      <form id="registrationForm" novalidate>
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="studentName">
+              <span class="label-icon green">♟</span> Student Name
+            </label>
+            <div class="input-box">
+              <span class="field-icon">♙</span>
+              <input id="studentName" type="text" placeholder="Enter your full name">
+            </div>
+            <small class="error" id="studentNameError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="enrollment">
+              <span class="label-icon green">▣</span> Enrollment No.
+            </label>
+            <div class="input-box">
+              <span class="field-icon">▣</span>
+              <input id="enrollment" type="text" placeholder="Enter your Enrollment No.">
+            </div>
+            <small class="error" id="enrollmentError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">
+              <span class="label-icon green">✉</span> Email
+            </label>
+            <div class="input-box">
+              <span class="field-icon">✉</span>
+              <input id="email" type="email" placeholder="Enter your email">
+            </div>
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="password">
+              <span class="label-icon green">♙</span> Password
+            </label>
+            <div class="input-box">
+              <span class="field-icon">♙</span>
+              <input id="password" type="password" placeholder="Enter your password">
+              <button class="eye" type="button" id="togglePassword">◉</button>
+            </div>
+            <small class="error" id="passwordError"></small>
+          </div>
+
+          <div class="form-group full gender-group">
+            <label>
+              <span class="label-icon green">♟</span> Gender
+            </label>
+            <div class="gender-options">
+              <label><input type="radio" name="gender" value="Male"> <span>Male</span></label>
+              <label><input type="radio" name="gender" value="Female"> <span>Female</span></label>
+              <label><input type="radio" name="gender" value="Other"> <span>Other</span></label>
+            </div>
+            <small class="error" id="genderError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">
+              <span class="label-icon green">▣</span> Student Date of Birth
+            </label>
+            <div class="input-box">
+              <span class="field-icon">♧</span>
+              <input id="dob" type="date">
+            </div>
+            <small class="error" id="dobError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="course">
+              <span class="label-icon green">♟</span> Course
+            </label>
+            <div class="input-box select-box">
+              <span class="field-icon">♟</span>
+              <select id="course">
+                <option value="">Select your course</option>
+                <option>Computer Engineering</option>
+                <option>Computer Science Engineering</option>
+                <option>Information Technology</option>
+                <option>Artificial Intelligence & Data Science</option>
+                <option>Electronics & Communication Engineering</option>
+                <option>Electrical & Electronics Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Civil Engineering</option>
+              </select>
+            </div>
+            <small class="error" id="courseError"></small>
+          </div>
+
+        </div>
+
+        <div class="security-note">
+          <div class="shield">♢</div>
+          <div>
+            <strong>Your information is secure with us.</strong>
+            <span>We respect your privacy and protect your data.</span>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button type="submit" class="register-btn">➤ &nbsp; Register</button>
+          <button type="reset" class="reset-btn">↻ &nbsp; Reset</button>
+        </div>
+
+        <div class="success" id="successMessage"></div>
+
+        <div class="login-text">
+          Already have an account? <a href="#" onclick="return false;">Login here</a>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- RIGHT SIDE -->
+    <aside class="info-panel">
+      <div class="curve"></div>
+      <div class="info-content">
+        <div class="mini-spark">✦</div>
+        <h2>Join Thousands of Students</h2>
+        <div class="info-line"></div>
+
+        <div class="benefit">
+          <div class="benefit-icon book">▣</div>
+          <div>
+            <h3>Quality Education</h3>
+            <p>Access world-class study<br>materials and resources.</p>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon chart">↗</div>
+          <div>
+            <h3>Track Progress</h3>
+            <p>Monitor your learning progress<br>and achievements.</p>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon people">♟</div>
+          <div>
+            <h3>Expert Guidance</h3>
+            <p>Learn from experienced<br>educators and mentors.</p>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-icon safe">♢</div>
+          <div>
+            <h3>Secure &amp; Safe</h3>
+            <p>Your data is protected with<br>enterprise-grade security.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-wave"></div>
+
+      <!-- Decorative plant; no image/circle -->
+      <div class="plant">
+        <div class="stem"></div>
+        <div class="leaf l1"></div>
+        <div class="leaf l2"></div>
+        <div class="leaf l3"></div>
+        <div class="leaf l4"></div>
+        <div class="leaf l5"></div>
+      </div>
+
+      <div class="decor-star s1">✦</div>
+      <div class="decor-star s2">✧</div>
+      <div class="decor-star s3">✦</div>
+      <div class="decor-star s4">✧</div>
+    </aside>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
